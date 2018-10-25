@@ -318,7 +318,7 @@ IF (WIN32)
 	SET_TARGET_PROPERTIES(${CPP_LIBRARY_NAME} PROPERTIES
 		LINK_FLAGS "/INCREMENTAL:NO /OPT:REF"
 		RUNTIME_OUTPUT_DIRECTORY ${FESAPI_BINARY_DIR}
-		VERSION ${Fesapi_VERSION_MAJOR}.${Fesapi_VERSION_MINOR})
+		)
 ELSEIF (UNIX)
 	TARGET_LINK_LIBRARIES (${CPP_LIBRARY_NAME} ${UUID_LIBRARY_RELEASE} ${GSOAP_LIBRARIES} ${MINIZIP_LIBRARY_RELEASE} ${HDF5_C_LIBRARY_RELEASE})
 # zlib is linked because it is a dependency of minizip which is usually statically linked to fesapi. If minizip would be dynamically linked from fesapi, zlib could be not present in these linked libraries.
