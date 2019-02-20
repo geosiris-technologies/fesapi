@@ -29,5 +29,6 @@ script:
     -DZLIB_LIBRARY_RELEASE=$TRAVIS_BUILD_DIR/../dependencies/hdf5-1.8.18-linux-centos7-x86_64-gcc485-noszip-shared/lib/libz.so
     $TRAVIS_BUILD_DIR
   - make
+  - make install
   - ./$TRAVIS_BUILD_DIR/install/example
   
