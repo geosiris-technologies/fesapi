@@ -30,5 +30,5 @@ script:
     $TRAVIS_BUILD_DIR
   - make
   - make install
-  - ./$TRAVIS_BUILD_DIR/install/example
+  - /$TRAVIS_BUILD_DIR/install/example
   
